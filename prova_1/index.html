@@ -173,11 +173,11 @@
   -->
   <nav class="bg-gray-800 flex items-center text-white block sm:hidden">
     <div class="relative flex h-16 items-center mx-auto">
-      <div class="absolute inset-y-0 left-0 flex items-center">
-        <button class="btn" onclick="openClose()">
+      <div class="absolute inset-y-0 left-0 flex items-center items-stretch">
+        <button class="btn " onclick="openClose()">
           <svg
             id="open"
-            class="block h-6 w-6"
+            class="block h-6 w-6 flex mx-auto "
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
@@ -191,27 +191,52 @@
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-          <svg
-            id="close"
-            class="hidden h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-         
-
-          </svg>
         </button>
       </div>
       </div>
-  
-
-      
+    </div>
   </nav>
- 
-
-
-  </body>
+  <div class="bg-blend-color ">
+    <div id="menu" class="hidden block sm:hidden items-center flex ">
+      <a
+        href="#"
+        class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto "
+        aria-current="page"
+      >
+        Main
+      </a>
+      <a
+        href="#"
+        class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto "
+      >
+        About Us
+      </a>
+      <div class="dropdown">
+        <a
+          href="#"
+          class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto dropdown-toggle"
+          onclick="toggleDropdown()"
+        >
+          Services
+        </a>
+        <div id="dropdownMenu" class="dropdown-menu" style="display: none;">
+          <a href="#" class="dropdown-item">Service 1</a>
+          <a href="#" class="dropdown-item">Service 2</a>
+          <a href="#" class="dropdown-item">Service 3</a>
+        </div>
+      </div>
+      <a
+        href="#"
+        class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto"
+      >
+        Blog
+      </a>
+      <a
+        href="#"
+        class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto"
+      >
+        Contact
+      </a>
+    </div>
+ </body>
 </html>
