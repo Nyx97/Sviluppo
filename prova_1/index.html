@@ -73,9 +73,9 @@
                 <div class="dropdown">
                     <div class="relative inline-block text-left">
                       <div>
-                        <button onclick="dropd()" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Services</button>
-                         
+                        <button onclick="dropd()" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Services
                         </button>
+                    
                       </div>
                     
                       <!--
@@ -197,7 +197,7 @@
     </div>
   </nav>
   <div class="bg-blend-color ">
-    <div id="menu" class="hidden block sm:hidden items-center flex ">
+    <div id="menu" class="hidden block sm:hidden items-center  ">
       <a
         href="#"
         class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto "
@@ -211,20 +211,42 @@
       >
         About Us
       </a>
-      <div class="dropdown">
+      <div class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto dropdown">
+        <div class="relative inline-block text-left">
+          <div>
         <a
           href="#"
-          class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto dropdown-toggle"
+          class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto"
           onclick="toggleDropdown()"
         >
           Services
         </a>
+          </div>
         <div id="dropdownMenu" class="dropdown-menu" style="display: none;">
-          <a href="#" class="dropdown-item">Service 1</a>
-          <a href="#" class="dropdown-item">Service 2</a>
-          <a href="#" class="dropdown-item">Service 3</a>
+          <a href="#" class="text-white block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Ciao</a>
+          <a href="#" class="text-white block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Marco</a>
+          <a href="#" class="text-white block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Grazie</a>
         </div>
       </div>
+      </div>
+      <!--
+  <div class="dropdown">
+  <div class="relative inline-block text-left">
+    <div>
+      <button onclick="dropd()" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Services
+      </button>
+    </div>
+  
+        <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Ciao</a>
+        <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Marco</a>
+        <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Grazie</a>
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+-->
       <a
         href="#"
         class="text-white hover:bg-gray-700 hover:text-blue-500 bg-gray-800 block rounded-md text-base text-center font-medium px-4 py-1 mt-1 mx-auto"
