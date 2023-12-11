@@ -2743,6 +2743,16 @@ video {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:px-8 {
     padding-left: 2rem;
